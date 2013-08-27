@@ -3,6 +3,17 @@ django-celery-example
 
 This code is a simple running example of using basic celery techniques in django. 
 
+Requirements
+============
+RabbitMQ
+http://www.rabbitmq.com/download.html
+
+Redis
+http://redis.io/topics/quickstart
+
+The python packages in _requirements.txt_
+  pip install django celery django-celery
+
 Queue tasks
 ===========
 
@@ -18,3 +29,13 @@ Start a worker
    python manage.py celery worker -c 1
    
 Note: the __-c 1__ option limits the worker pool size to one
+
+
+Further Reading
+===============
+
+Celery Docs
+http://www.celeryproject.org/tutorials/
+
+Flower: a celery monitor
+https://github.com/mher/flower
